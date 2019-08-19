@@ -1,0 +1,17 @@
+http http://127.0.0.1:8082/hello/ 'Authorization: Token f7fbc4fd95db09db63b21e23dd1b07c521ab11c9'
+{
+	"inventory":{
+		"title":"first ttitle",
+		"author":"first",
+		"isbn":123422,
+		"publisher_name":"first",
+		"publisher_date":24/12/1994,
+		"category":"first cat",
+		"stocks":1
+	}
+}
+
+
+https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=crud-data-table-for-database-with-modal-form
+
+https://simpleisbetterthancomplex.com/tutorial/2018/11/22/how-to-implement-token-authentication-using-django-rest-framework.html
