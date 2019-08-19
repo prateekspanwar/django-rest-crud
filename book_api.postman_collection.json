@@ -1,0 +1,113 @@
+{
+	"variables": [],
+	"info": {
+		"name": "book_api",
+		"_postman_id": "34046509-98b2-e6e1-7677-6c9ea1328736",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api-token-auth/",
+			"request": {
+				"url": "http://127.0.0.1:8000/api-token-auth/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "username",
+						"value": "vitor",
+						"description": ""
+					},
+					{
+						"key": "password",
+						"value": "vitor",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic dml0b3I6dml0b3I=",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n\"username\":\"vitor\",\n\"password\":\"vitor\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/inventory/",
+			"request": {
+				"url": "http://127.0.0.1:8000/inventory/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Token f7fbc4fd95db09db63b21e23dd1b07c521ab11c9",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"inventory\":{\"title\":\"sdas\",\"author\":\"hjhj\",\"isbn\":\"13\",\"publisher_name\":\"wew\",\"publisher_date\":\"2018-07-22\",\"category\":\"wee\",\"stocks\":\"1\"}}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/inventory/",
+			"request": {
+				"url": "http://127.0.0.1:8000/inventory/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token f7fbc4fd95db09db63b21e23dd1b07c521ab11c9",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/inventory/2",
+			"request": {
+				"url": "http://127.0.0.1:8000/inventory/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Token f7fbc4fd95db09db63b21e23dd1b07c521ab11c9",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"inventory\":{\n\t\t\"title\":\"new updated tdsdsd tds changes dsitle\",\n\t\t\"author\":\"fisdsdrst\",\n\t\t\"isbn\":123422,\n\t\t\"publisher_name\":\"first\",\n\t\t\"publisher_date\":\"1994-12-24\",\n\t\t\"category\":\"first cat\",\n\t\t\"stocks\":1\n\t}\n}"
+				},
+				"description": "to get all inventories"
+			},
+			"response": []
+		}
+	]
+}
